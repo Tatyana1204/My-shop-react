@@ -1,0 +1,32 @@
+
+.header{
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+.header-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.header-logo span{
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 6px;
+}
+.header-controls{
+    display: flex;
+    flex-direction: row;
+}
+.header-burger{
+    display: none;
+    width: 30px;
+    height: 19px;
+}
