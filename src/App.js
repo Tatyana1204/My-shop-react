@@ -1,22 +1,14 @@
 import './App.css'
-import Header from "./components/Header";
-import ContentBox from "./components/content-box";
-import Search from "./components/Search";
+import Header from "./components/header/Header";
+import ContentBox from "./components/content-wrapper/ContentBox";
+import Search from "./components/search/Search";
 import React, {useState} from "react";
+import PageWrapper from "./components/page-wrapper/PageWrapper";
 
 function App() {
-    const [search, setSearch] = useState("");
-    const handleChange = (e) =>{
-        console.log(e.target.value);
-        setSearch(e.target.value);
-    }
   return (
       <div className="App">
-          <Header/>
-          <Search value = {search} onChange={handleChange}/>
-          {/*проверка*/}
-          <span>{search}</span>
-          <ContentBox/>
+          <PageWrapper/>
       </div>
   );
 }

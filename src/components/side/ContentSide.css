@@ -1,0 +1,25 @@
+.content-side{
+    width: 260px;
+}
+.content-side-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 15px;
+}
+.content-side-box img{
+    width: 30px;
+    height: 30px;
+}
+.content-side-text{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+}
+.content-side-box p{
+    font-size: 14px;
+    line-height: 16px;
+}
+.content-side-title{
+    padding-bottom: 20px;
+}
