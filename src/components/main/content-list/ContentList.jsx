@@ -1,6 +1,6 @@
 import React from 'react';
-import './Content-list.css'
-import ContentListItem from "./Content-list-item";
+import './ContentList.css'
+import ContentListItem from "./list-item/Content-list-item";
 
 const ContentList = () => {
     return (

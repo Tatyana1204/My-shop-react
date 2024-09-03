@@ -1,7 +1,7 @@
 import React from 'react';
 import './Content-box.css';
-import ContentMain from "./Content-main";
-import ContentSide from "./Content-side";
+import ContentMain from "../main/ContentMain";
+import ContentSide from "../side/ContentSide";
 
 const ContentBox = () => {
     return (
