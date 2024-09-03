@@ -59,21 +59,8 @@ body{
         width: calc((100% - 30px) / 2);
     }
 }
-@media (max-width: 991px){
-    .container{
-        max-width: 730px;
-    }
-    .content-box{
-        flex-direction: column;
-    }
-    .content-side{
-        width: 100%;
-    }
-    .content-main{
-        width: 100%;
-    }
-}
-@media (max-width: 786px){
+
+@media (max-width: 1240px){
     .container{
         max-width: 100%;
     }
@@ -93,6 +80,15 @@ body{
         margin-bottom: 25px;
     }
     .content-main_list-item{
+        width: 100%;
+    }
+    .content-box{
+        flex-direction: column;
+    }
+    .content-side{
+        width: 100%;
+    }
+    .content-main{
         width: 100%;
     }
 }
