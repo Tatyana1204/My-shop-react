@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5009fb83-19b0-41a7-ba64-8e1420233a78" name="Changes" comment="Initialize project using Create React App">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-shop-react" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-shop-react/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-shop-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-shop-react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/content-wrapper/ContentBox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/content-wrapper/ContentBox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/main/ContentMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/main/ContentMain.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/main/content-list/ContentList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/main/content-list/ContentList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content-wrapper/ContentBox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content-wrapper/ContentBox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/ContentMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/ContentMain.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/content-list/ContentList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content-list/ContentList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page-wrapper/PageWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-wrapper/PageWrapper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/Search.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/edits" />
+                <branch-info repo="$PROJECT_DIR$/my-shop-react" source="origin/edits" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_COMMON_BRANCH" value="main" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Tatyana1204&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Tatyana1204/My-shop-react.git&quot;,
+    &quot;accountId&quot;: &quot;bc7673f2-4c07-4ba4-8eff-aac0b9287560&quot;
+  }
+}</component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2lVxBFPe6LtZRXl2NMnhuiuuC01" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.eslint.config.mjs.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "edits",
+    "last_opened_file_path": "/Users/tatanasmetanina/my-shop-react/my-shop-react/public/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "/Users/tatanasmetanina/my-shop-react/my-shop-react/node_modules/stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/tatanasmetanina/my-shop-react/my-shop-react/node_modules/prettier",
+    "settings.editor.selected.configurable": "configurable.stylesheets.stylelint",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my-shop-react/public/images" />
+      <recent name="$PROJECT_DIR$/my-shop-react/src/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my-shop-react/src/components" />
+      <recent name="$PROJECT_DIR$/my-shop-react/src/components/content-box/main/content-list/list-item" />
+      <recent name="$PROJECT_DIR$/my-shop-react/src/components/content-box" />
+      <recent name="$PROJECT_DIR$/my-shop-react/src/components/main/content-list" />
+      <recent name="$PROJECT_DIR$/my-shop-react/src/components/main" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5009fb83-19b0-41a7-ba64-8e1420233a78" name="Changes" comment="" />
+      <created>1725278907232</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725278907232</updated>
+      <workItem from="1725278908313" duration="6249000" />
+      <workItem from="1725347509737" duration="21141000" />
+      <workItem from="1725382906852" duration="2986000" />
+      <workItem from="1725385903541" duration="2459000" />
+      <workItem from="1725388583958" duration="149000" />
+      <workItem from="1725389152677" duration="1317000" />
+      <workItem from="1725427846747" duration="1995000" />
+      <workItem from="1725430113041" duration="7075000" />
+      <workItem from="1725445833119" duration="2532000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initialize project using Create React App">
+      <option name="closed" value="true" />
+      <created>1725349621826</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725349621826</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initialize project using Create React App" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialize project using Create React App" />
+  </component>
+</project>

@@ -3,11 +3,11 @@ import './Content-box.css';
 import ContentMain from "../main/ContentMain";
 import ContentSide from "../side/ContentSide";
 
-const ContentBox = () => {
+const ContentBox = ({cards}) => {
     return (
         <div className="container">
             <div className="content-box">
-               <ContentMain/>
+                <ContentMain cards={cards}/>
                 <ContentSide/>
             </div>
         </div>
