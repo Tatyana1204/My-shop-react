@@ -60,29 +60,44 @@ const PageWrapper = (MainPage) => {
     const [cards, setCards] = useState(cardsContent);
     const [search, setSearch] = useState('');
 
-    const handleChange = (e) => {
-        console.log(e.target.value);
-        setSearch(e.target.value);
-    }
-    const filterProducts = (searchText, listOfProducts) => {
-        if (!searchText) {
-            return listOfProducts;
+    // const handleChange = (e) => {
+    //     console.log(e.target.value);
+    //     setSearch(e.target.value);
+    // }
+    // const filterProducts = (searchText, listOfProducts) => {
+    //     if (!searchText) {
+    //         return listOfProducts;
+    //     }
+    //     return listOfProducts.filter(({name}) => name.toLowerCase().includes(searchText.toLowerCase()));
+    // };
+    // useEffect(() => {
+    //     const Debounce = setTimeout(() => {
+    //         setCards(filterProducts(search, cardsContent));
+    //     }, 400);
+    //     return () => clearTimeout(Debounce);
+    // }, [search]);
+
+    const filterProducts = () => {
+        if (!search) {
+            setCards(cardsContent);
         }
-        return listOfProducts.filter(({name}) => name.toLowerCase().includes(searchText.toLowerCase()));
+        const listOfProducts = cardsContent
+            .filter(({name}) => name.toLowerCase().includes(search.toLowerCase()));
+        setCards(listOfProducts);
     };
-    useEffect(() => {
-        const Debounce = setTimeout(() => {
-            setCards(filterProducts(search, cardsContent));
-        }, 400);
-        return () => clearTimeout(Debounce);
-    }, [search]);
 
     return (
         <div className="page-wrapper">
             <Header/>
-            <Search filterProducts={filterProducts} search={search}
-                    handleChange={(event) => setSearch(event.target.value)}/>
-            <ContentBox cards={cards} setCards={setCards}/>
+            <Search
+                filterProducts={filterProducts}
+                search={search}
+                handleChange={(event) => setSearch(event.target.value)}
+            />
+            <ContentBox
+                cards={cards}
+                setCards={setCards}
+            />
 
         </div>
     );

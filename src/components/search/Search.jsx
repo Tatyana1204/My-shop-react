@@ -11,6 +11,7 @@ const Search = ({handleChange, search, filterProducts}) => {
                     onChange={handleChange}
                     type="text"
                     placeholder="Поиск по объявлениям"
+
                 />
                 <button onClick={filterProducts} className="btn btn-primary search-btn">
                     <img className="search-btn-icon" src='/images/search.svg' alt="Поиск"/>
