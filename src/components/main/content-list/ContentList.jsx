@@ -1,8 +1,12 @@
 import React from 'react';
 import './ContentList.css'
 import ContentListItem from "./list-item/Content-list-item";
+import {useSelector} from "react-redux";
 
-const ContentList = ({cards}) => {
+
+const ContentList = () => {
+    const cards = useSelector((state) => state.cards.cards);
+
     if (cards.length < 1) {
         return (
             <div className="content-list">
@@ -14,7 +18,7 @@ const ContentList = ({cards}) => {
         <div className="content-main_list">
             {cards.map((item, index) =>
                 <ContentListItem props={item} key={item.id}/>
-            )};
+            )}
         </div>
     );
 };
