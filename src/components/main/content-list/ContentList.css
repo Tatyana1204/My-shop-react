@@ -42,13 +42,6 @@
     line-height: 21px;
 }
 
-.content-main_list-item__gray-text {
-    color: rgb(196, 196, 196);
-    font-size: 14px;
-    line-height: 16px;
-
-}
-
 @media (max-width: 1240px) {
     .container {
         max-width: 100%;

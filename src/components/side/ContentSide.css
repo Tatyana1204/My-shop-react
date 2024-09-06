@@ -1,25 +1,40 @@
-.content-side{
-    width: 260px;
+.content-side {
+    width: 20%;
 }
-.content-side-box{
+
+.content-side-box {
     display: flex;
     flex-direction: column;
     gap: 5px;
     padding-bottom: 15px;
 }
-.content-side-box img{
+
+.content-side-box img {
     width: 30px;
     height: 30px;
 }
-.content-side-text{
+
+.content-side-text {
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
 }
-.content-side-box p{
+
+.content-side-box p {
     font-size: 14px;
     line-height: 16px;
 }
-.content-side-title{
+
+.content-side-title {
     padding-bottom: 20px;
+}
+
+@media (max-width: 1240px) {
+    .content-side {
+        width: 80%;
+    }
+
+    .content-side-box {
+        justify-content: center;
+    }
 }

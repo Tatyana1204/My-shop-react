@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5009fb83-19b0-41a7-ba64-8e1420233a78" name="Changes" comment="Initialize project using Create React App">
-      <change afterPath="$PROJECT_DIR$/src/store/cardsSlice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/product-card/productCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/product-card/productCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-shop-react" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-shop-react/package-lock.json" beforeDir="false" />
@@ -16,15 +16,15 @@
       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/main/ContentMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/main/ContentMain.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/main/content-list/ContentList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/main/content-list/ContentList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content-wrapper/Content-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content-wrapper/Content-box.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/content-wrapper/ContentBox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content-wrapper/ContentBox.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/ContentMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/ContentMain.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/content-list/ContentList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content-list/ContentList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page-wrapper/PageWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-wrapper/PageWrapper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/content-list/ContentList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content-list/ContentList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/content-list/list-item/Content-list-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content-list/list-item/Content-list-item.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/Search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/side/ContentSide.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/side/ContentSide.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/cardsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cardsSlice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="edits" />
+        <entry key="$PROJECT_DIR$" value="toolkit" />
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="main" />
@@ -93,7 +93,7 @@
   "keyToString": {
     "Node.js.eslint.config.mjs.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "toolkit",
+    "git-widget-placeholder": "cards-root",
     "last_opened_file_path": "/Users/tatanasmetanina/my-shop-react/my-shop-react/public/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -148,7 +148,7 @@
       <workItem from="1725430113041" duration="7075000" />
       <workItem from="1725445833119" duration="6094000" />
       <workItem from="1725520305017" duration="737000" />
-      <workItem from="1725535737058" duration="5753000" />
+      <workItem from="1725535737058" duration="15970000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize project using Create React App">
       <option name="closed" value="true" />

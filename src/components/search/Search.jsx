@@ -16,7 +16,7 @@ const Search = () => {
                 <input
                     value={text}
                     onChange={(event) => setSearch(event.target.value)}
-                    type="text"
+                    type="search"
                     placeholder="Поиск по объявлениям">
                 </input>
                 <button onClick={filterCards} className="btn btn-primary search-btn">
