@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
 import './productCard.css';
+
 
 const ProductCard = () => {
     const props = useSelector((state) => state.cards.cards);
@@ -14,6 +15,7 @@ const ProductCard = () => {
                         <img className="product-image" src={props[0].img} alt={props[0].name}/>
                     </div>
                     <div className="content">
+                        <Link to='/src/components/main/ContentMain'>x</Link>
                         <span className='product-name'>{props[0].price}</span>
                         <button className="btn btn-primary">Показать телефон</button>
                     </div>
