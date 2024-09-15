@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5009fb83-19b0-41a7-ba64-8e1420233a78" name="Changes" comment="Initialize project using Create React App">
-      <change afterPath="$PROJECT_DIR$/public/images/cat1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/cat2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/cat3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/cat4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/cat5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/cat6.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-shop-react" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-shop-react/package-lock.json" beforeDir="false" />
@@ -20,14 +14,8 @@
       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/main/ContentMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/main/ContentMain.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/main/content-list/ContentList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/main/content-list/ContentList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cat.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/content-wrapper/Content-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content-wrapper/Content-box.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/content-list/ContentList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content-list/ContentList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/content-list/list-item/Content-list-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content-list/list-item/Content-list-item.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/product-card/productCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/productCard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/product-card/productCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/productCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/Search.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/cardsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cardsSlice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +141,7 @@
       <workItem from="1725430113041" duration="7075000" />
       <workItem from="1725445833119" duration="6094000" />
       <workItem from="1725520305017" duration="737000" />
-      <workItem from="1725535737058" duration="39125000" />
+      <workItem from="1725535737058" duration="40873000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize project using Create React App">
       <option name="closed" value="true" />
