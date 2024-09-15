@@ -4,13 +4,11 @@ import ContentBox from "../content-wrapper/ContentBox";
 import './PageWrapper.css'
 
 const PageWrapper = () => {
-
     return (
         <div className="page-wrapper">
             <Header/>
             <Search/>
             <ContentBox/>
-
         </div>
     );
 };

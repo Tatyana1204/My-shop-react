@@ -10,13 +10,17 @@ const Search = () => {
         dispatch(filterProducts({text}));
     }
     const [text, setSearch] = useState('');
+
+    if (!text) {
+        filterCards();
+    }
     return (
         <div className="container">
             <div className="search-box">
                 <input
                     value={text}
                     onChange={(event) => setSearch(event.target.value)}
-                    type="text"
+                    type="search"
                     placeholder="Поиск по объявлениям">
                 </input>
                 <button onClick={filterCards} className="btn btn-primary search-btn">
