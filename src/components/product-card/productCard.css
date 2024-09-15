@@ -52,8 +52,8 @@
     line-height: 17px;
 }
 
-.back {
-
+.phone {
+    display: none;
 }
 
 @media (max-width: 1240px) {
