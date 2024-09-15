@@ -1,29 +1,30 @@
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
 import './productCard.css';
 
 
 const ProductCard = () => {
+    const id = Number(useParams().id);
     const props = useSelector((state) => state.cards.cards);
-
+    const product = props.find(product => product.id === id);
     return (
         <div className="content-main">
             <div className="product-card">
                 <div className="product-upper">
                     <div className="content product-right">
-                        <span className='product-name'>{props[0].name}</span>
-                        <img className="product-image" src={props[0].img} alt={props[0].name}/>
+                        <span className='product-name'>{product.name}</span>
+                        <img className="product-image" src={product.img} alt={product.name}/>
                     </div>
                     <div className="content">
-                        <Link to='/src/components/main/ContentMain'>x</Link>
-                        <span className='product-name'>{props[0].price}</span>
+                        <Link to='/items'><span className='gray-text'>Посмотреть еще объявления</span></Link>
+                        <span className='product-name'>{product.price}</span>
                         <button className="btn btn-primary">Показать телефон</button>
                     </div>
                 </div>
                 <div className="product-description">
-                    <p>{props[1].description}</p>
-                    <span className='gray-text'>{props[1].location}</span>
-                    <span className='gray-text'>{props[1].date}</span>
+                    <p>{product.description}</p>
+                    <span className='gray-text'>{product.location}</span>
+                    <span className='gray-text'>{product.date}</span>
                 </div>
             </div>
         </div>

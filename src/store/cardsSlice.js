@@ -3,9 +3,9 @@ import {createSlice} from "@reduxjs/toolkit";
 const cardsContent = [
     {
         id: 1,
-        img: '/images/cat.jpeg',
+        img: '/images/cat1.jpg',
         name: 'Super-cat 1',
-        price: '10 000 pуб.',
+        price: '100 000 pуб.',
         location: 'St. Petersburg',
         date: '03.09.2024',
         description: 'Котик Кузя,ласковый замечательный кот.Котик Кузе ,1,5 годика\n' +
@@ -16,18 +16,18 @@ const cardsContent = [
     },
     {
         id: 2,
-        img: '/images/cat.jpeg',
+        img: '/images/cat2.jpg',
         name: 'Super 2',
-        price: '10 000 pуб.',
+        price: '5 000 pуб.',
         location: 'St. Petersburg',
         date: '03.09.2024',
         description: 'Отдам котика в хорошие и добрые руки. по семейным обстоятельствам, Гашеька не может больше жить у нас. он воспитанный, приучен у туалету, не привередлив к еде. очень ласковый. станет хорошим другом. ему полтора года. кастрирован.\n'
     },
     {
         id: 3,
-        img: '/images/cat.jpeg',
+        img: '/images/cat3.jpg',
         name: 'Cat 3',
-        price: '10 000 pуб.',
+        price: '50 000 pуб.',
         location: 'St. Petersburg',
         date: '03.09.2024',
         description: 'Шикарный шотландский котик готов к переезду\n' +
@@ -42,9 +42,9 @@ const cardsContent = [
     },
     {
         id: 4,
-        img: '/images/cat.jpeg',
+        img: '/images/cat4.jpg',
         name: 'Super-cat new 4',
-        price: '10 000 pуб.',
+        price: '1 pуб.',
         location: 'St. Petersburg',
         date: '03.09.2024',
         description: 'Ласковый котик Альгис был спасен с улицы.\n' +
@@ -56,9 +56,9 @@ const cardsContent = [
     },
     {
         id: 5,
-        img: '/images/cat.jpeg',
+        img: '/images/cat5.jpg',
         name: 'Super-cat new 5',
-        price: '10 000 pуб.',
+        price: '9000 pуб.',
         location: 'St. Petersburg',
         date: '03.09.2024',
         description: 'Ищет дом шикaрный молодой кoт Дымок. Большой, пушистый и oчень лaскoвый.\n' +
@@ -80,9 +80,9 @@ const cardsContent = [
     },
     {
         id: 6,
-        img: '/images/cat.jpeg',
+        img: '/images/cat6.jpg',
         name: 'Super-cat old 6',
-        price: '10 000 pуб.',
+        price: '18 000 pуб.',
         location: 'St. Petersburg',
         date: '03.09.2024',
         description: 'Пpeдлaгаю к пpoдаже британскогo котикa окpаса чepнoe пятнo нa cepебре или BИСКAC.\n' +
@@ -100,8 +100,9 @@ const cardsSlice = createSlice({
     reducers: {
         filterProducts(state, action) {
             state.cards = cardsContent.filter((card) => card.name.toLowerCase().includes(action.payload.text.toLowerCase()))
-        }
+        },
     }
 })
 export const {filterProducts} = cardsSlice.actions;
+
 export default cardsSlice.reducer;

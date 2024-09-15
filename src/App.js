@@ -10,8 +10,8 @@ function App() {
         <div className="App">
             <Routes>
                 <Route path="/" element={<PageWrapper/>}>
-                    <Route path='src/components/main/ContentMain' element={<ContentMain/>}/>
-                    <Route path='src/components/product-card/productCard' element={<ProductCard/>}/>
+                    <Route path='/items' element={<ContentMain/>}/>
+                    <Route path='items/:id' element={<ProductCard/>}/>
                     <Route path='*' element={<ContentMain/>}/>
                 </Route>
             </Routes>

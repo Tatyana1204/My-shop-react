@@ -10,6 +10,10 @@ const Search = () => {
         dispatch(filterProducts({text}));
     }
     const [text, setSearch] = useState('');
+
+    if (!text) {
+        filterCards();
+    }
     return (
         <div className="container">
             <div className="search-box">

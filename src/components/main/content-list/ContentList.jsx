@@ -6,7 +6,6 @@ import {useSelector} from "react-redux";
 
 const ContentList = () => {
     const cards = useSelector((state) => state.cards.cards);
-
     if (cards.length < 1) {
         return (
             <div className="content-list">

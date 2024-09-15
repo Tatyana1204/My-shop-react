@@ -43,14 +43,15 @@
 @media (max-width: 1240px) {
     .content-box {
         align-items: center;
+        flex-direction: column;
     }
 
     .content-main {
-        width: 80%;
+        width: 100%;
     }
 
     .content-side {
-        width: 80%;
+        width: 100%;
     }
 
     .content-main_list-item {
