@@ -1,0 +1,210 @@
+Index: src/components/header/Header.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport './Header.css'\n\nconst Header = () => {\n    return (\n        <div className='container'>\n        <header className=\"App-header\">\n            <div className=\"header-box\">\n                <div className=\"header-logo\">\n                    <img src=\"/images/logo.svg\" alt=\"logo\"/>\n                    <span>MyShop</span>\n                </div>\n\n                <div className=\"header-controls\">\n                    <button className=\"btn btn-outline\">Вход и регистрация</button>\n                    <button className=\"btn btn-primary\">Подать объявление</button>\n                </div>\n                <div className=\"header-burger\">\n                    <img src=\"/images/burger.svg\" alt=\"burger\"/>\n                </div>\n            </div>\n        </header>\n        </div>\n    );\n};\n\nexport default Header;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/header/Header.jsx b/src/components/header/Header.jsx
+--- a/src/components/header/Header.jsx	
++++ b/src/components/header/Header.jsx	
+@@ -2,24 +2,27 @@
+ import './Header.css'
+ 
+ const Header = () => {
++    const addProduct = () => {
++
++    }
+     return (
+         <div className='container'>
+-        <header className="App-header">
+-            <div className="header-box">
+-                <div className="header-logo">
+-                    <img src="/images/logo.svg" alt="logo"/>
+-                    <span>MyShop</span>
+-                </div>
++            <header className="App-header">
++                <div className="header-box">
++                    <div className="header-logo">
++                        <img src="/images/logo.svg" alt="logo"/>
++                        <span>MyShop</span>
++                    </div>
+ 
+-                <div className="header-controls">
+-                    <button className="btn btn-outline">Вход и регистрация</button>
+-                    <button className="btn btn-primary">Подать объявление</button>
+-                </div>
+-                <div className="header-burger">
+-                    <img src="/images/burger.svg" alt="burger"/>
+-                </div>
+-            </div>
+-        </header>
++                    <div className="header-controls">
++                        <button className="btn btn-outline">Вход и регистрация</button>
++                        <button className="btn btn-primary" onClick={addProduct}>Подать объявление</button>
++                    </div>
++                    <div className="header-burger">
++                        <img src="/images/burger.svg" alt="burger"/>
++                    </div>
++                </div>
++            </header>
+         </div>
+     );
+ };
+Index: src/components/page-wrapper/PageWrapper.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React, {useEffect, useState} from 'react';\nimport Header from \"../header/Header\";\nimport Search from \"../search/Search\";\nimport ContentBox from \"../content-wrapper/ContentBox\";\nimport './PageWrapper.css'\n\n\nconst PageWrapper = (MainPage) => {\n    const cardsContent = [\n        {\n            id: 1,\n            img: '/images/cat.jpeg',\n            name: 'Super-cat 1',\n            price: '10 000 pуб.',\n            location: 'St. Petersburg',\n            date: '03.09.2024'\n        },\n        {\n            id: 2,\n            img: '/images/cat.jpeg',\n            name: 'Super 2',\n            price: '10 000 pуб.',\n            location: 'St. Petersburg',\n            date: '03.09.2024'\n        },\n        {\n            id: 3,\n            img: '/images/cat.jpeg',\n            name: 'Cat 3',\n            price: '10 000 pуб.',\n            location: 'St. Petersburg',\n            date: '03.09.2024'\n        },\n        {\n            id: 4,\n            img: '/images/cat.jpeg',\n            name: 'Super-cat new 4',\n            price: '10 000 pуб.',\n            location: 'St. Petersburg',\n            date: '03.09.2024'\n        },\n        {\n            id: 5,\n            img: '/images/cat.jpeg',\n            name: 'Super-cat new 5',\n            price: '10 000 pуб.',\n            location: 'St. Petersburg',\n            date: '03.09.2024'\n        },\n        {\n            id: 6,\n            img: '/images/cat.jpeg',\n            name: 'Super-cat old 6',\n            price: '10 000 pуб.',\n            location: 'St. Petersburg',\n            date: '03.09.2024'\n        },\n    ];\n\n    const [cards, setCards] = useState(cardsContent);\n    const [search, setSearch] = useState('');\n\n    // const handleChange = (e) => {\n    //     console.log(e.target.value);\n    //     setSearch(e.target.value);\n    // }\n    // const filterProducts = (searchText, listOfProducts) => {\n    //     if (!searchText) {\n    //         return listOfProducts;\n    //     }\n    //     return listOfProducts.filter(({name}) => name.toLowerCase().includes(searchText.toLowerCase()));\n    // };\n    // useEffect(() => {\n    //     const Debounce = setTimeout(() => {\n    //         setCards(filterProducts(search, cardsContent));\n    //     }, 400);\n    //     return () => clearTimeout(Debounce);\n    // }, [search]);\n\n    const filterProducts = () => {\n        if (!search) {\n            setCards(cardsContent);\n        }\n        const listOfProducts = cardsContent\n            .filter(({name}) => name.toLowerCase().includes(search.toLowerCase()));\n        setCards(listOfProducts);\n    };\n\n    return (\n        <div className=\"page-wrapper\">\n            <Header/>\n            <Search\n                filterProducts={filterProducts}\n                search={search}\n                handleChange={(event) => setSearch(event.target.value)}\n            />\n            <ContentBox\n                cards={cards}\n                setCards={setCards}\n            />\n\n        </div>\n    );\n};\n\nexport default PageWrapper;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/page-wrapper/PageWrapper.jsx b/src/components/page-wrapper/PageWrapper.jsx
+--- a/src/components/page-wrapper/PageWrapper.jsx	
++++ b/src/components/page-wrapper/PageWrapper.jsx	
+@@ -1,11 +1,11 @@
+-import React, {useEffect, useState} from 'react';
++import React, {useState} from 'react';
+ import Header from "../header/Header";
+ import Search from "../search/Search";
+ import ContentBox from "../content-wrapper/ContentBox";
+ import './PageWrapper.css'
+ 
+ 
+-const PageWrapper = (MainPage) => {
++const PageWrapper = () => {
+     const cardsContent = [
+         {
+             id: 1,
+@@ -60,23 +60,6 @@
+     const [cards, setCards] = useState(cardsContent);
+     const [search, setSearch] = useState('');
+ 
+-    // const handleChange = (e) => {
+-    //     console.log(e.target.value);
+-    //     setSearch(e.target.value);
+-    // }
+-    // const filterProducts = (searchText, listOfProducts) => {
+-    //     if (!searchText) {
+-    //         return listOfProducts;
+-    //     }
+-    //     return listOfProducts.filter(({name}) => name.toLowerCase().includes(searchText.toLowerCase()));
+-    // };
+-    // useEffect(() => {
+-    //     const Debounce = setTimeout(() => {
+-    //         setCards(filterProducts(search, cardsContent));
+-    //     }, 400);
+-    //     return () => clearTimeout(Debounce);
+-    // }, [search]);
+-
+     const filterProducts = () => {
+         if (!search) {
+             setCards(cardsContent);
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"5009fb83-19b0-41a7-ba64-8e1420233a78\" name=\"Changes\" comment=\"Initialize project using Create React App\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/my-shop-react\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/my-shop-react\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/my-shop-react/package-lock.json\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/my-shop-react/package.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/my-shop-react/package.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/my-shop-react/src/App.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/my-shop-react/src/App.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/my-shop-react/src/components/content-wrapper/ContentBox.jsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/my-shop-react/src/components/content-wrapper/ContentBox.jsx\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/my-shop-react/src/components/main/ContentMain.jsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/my-shop-react/src/components/main/ContentMain.jsx\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/my-shop-react/src/components/main/content-list/ContentList.jsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/my-shop-react/src/components/main/content-list/ContentList.jsx\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/components/page-wrapper/PageWrapper.jsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/page-wrapper/PageWrapper.jsx\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/components/search/Search.jsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/search/Search.jsx\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FormatOnSaveOptions\">\n    <option name=\"myRunOnSave\" value=\"true\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <favorite-branches>\n      <branch-storage>\n        <map>\n          <entry type=\"REMOTE\">\n            <value>\n              <list>\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"origin/edits\" />\n                <branch-info repo=\"$PROJECT_DIR$/my-shop-react\" source=\"origin/edits\" />\n              </list>\n            </value>\n          </entry>\n        </map>\n      </branch-storage>\n    </favorite-branches>\n    <option name=\"RECENT_COMMON_BRANCH\" value=\"main\" />\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"ROOT_SYNC\" value=\"SYNC\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;Tatyana1204&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;git@github.com:Tatyana1204/My-shop-react.git&quot;,\n    &quot;accountId&quot;: &quot;bc7673f2-4c07-4ba4-8eff-aac0b9287560&quot;\n  }\n}</component>\n  <component name=\"PackageJsonUpdateNotifier\">\n    <dismissed value=\"$PROJECT_DIR$/package.json\" />\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"QODANA_PROBLEMS_VIEW_TAB\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 3\n}</component>\n  <component name=\"ProjectId\" id=\"2lVxBFPe6LtZRXl2NMnhuiuuC01\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Node.js.eslint.config.mjs.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"git-widget-placeholder\": \"#1 on edits\",\n    \"last_opened_file_path\": \"/Users/tatanasmetanina/my-shop-react/my-shop-react/public/images\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.standard\": \"true\",\n    \"node.js.detected.package.stylelint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.standard\": \"\",\n    \"node.js.selected.package.stylelint\": \"/Users/tatanasmetanina/my-shop-react/my-shop-react/node_modules/stylelint\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"prettierjs.PrettierConfiguration.Package\": \"/Users/tatanasmetanina/my-shop-react/my-shop-react/node_modules/prettier\",\n    \"settings.editor.selected.configurable\": \"configurable.stylesheets.stylelint\",\n    \"ts.external.directory.path\": \"/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/my-shop-react/public/images\" />\n      <recent name=\"$PROJECT_DIR$/my-shop-react/src/images\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/my-shop-react/src/components\" />\n      <recent name=\"$PROJECT_DIR$/my-shop-react/src/components/content-box/main/content-list/list-item\" />\n      <recent name=\"$PROJECT_DIR$/my-shop-react/src/components/content-box\" />\n      <recent name=\"$PROJECT_DIR$/my-shop-react/src/components/main/content-list\" />\n      <recent name=\"$PROJECT_DIR$/my-shop-react/src/components/main\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"5009fb83-19b0-41a7-ba64-8e1420233a78\" name=\"Changes\" comment=\"\" />\n      <created>1725278907232</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1725278907232</updated>\n      <workItem from=\"1725278908313\" duration=\"6249000\" />\n      <workItem from=\"1725347509737\" duration=\"21141000\" />\n      <workItem from=\"1725382906852\" duration=\"2986000\" />\n      <workItem from=\"1725385903541\" duration=\"2459000\" />\n      <workItem from=\"1725388583958\" duration=\"149000\" />\n      <workItem from=\"1725389152677\" duration=\"1317000\" />\n      <workItem from=\"1725427846747\" duration=\"1995000\" />\n      <workItem from=\"1725430113041\" duration=\"7075000\" />\n      <workItem from=\"1725445833119\" duration=\"6094000\" />\n      <workItem from=\"1725520305017\" duration=\"737000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Initialize project using Create React App\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725349621826</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725349621826</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Initialize project using Create React App\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Initialize project using Create React App\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -14,8 +14,7 @@
+       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/main/ContentMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/main/ContentMain.jsx" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/main/content-list/ContentList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/main/content-list/ContentList.jsx" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/page-wrapper/PageWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-wrapper/PageWrapper.jsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/Search.jsx" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/components/content-wrapper/Content-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content-wrapper/Content-box.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -40,6 +39,11 @@
+         </map>
+       </branch-storage>
+     </favorite-branches>
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="cards-root" />
++      </map>
++    </option>
+     <option name="RECENT_COMMON_BRANCH" value="main" />
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+     <option name="ROOT_SYNC" value="SYNC" />
+@@ -75,7 +79,7 @@
+   "keyToString": {
+     "Node.js.eslint.config.mjs.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "#1 on edits",
++    "git-widget-placeholder": "edits",
+     "last_opened_file_path": "/Users/tatanasmetanina/my-shop-react/my-shop-react/public/images",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.standard": "true",
+Index: src/components/content-wrapper/Content-box.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\n.content-box{\n    display: flex;\n    align-items: flex-start;\n    justify-content:space-between;\n    width: 100%;\n    gap: 30px;\n}\n\n.content-main{\n    flex-grow: 1;\n}\n\n/*side*/\n\n.content-side{\n    width: 260px;\n}\n.content-side-box{\n    display: flex;\n    flex-direction: column;\n    gap: 5px;\n    padding-bottom: 15px;\n}\n.content-side-box img{\n    width: 30px;\n    height: 30px;\n}\n.content-side-text{\n    font-size: 14px;\n    line-height: 16px;\n    font-weight: 700;\n}\n.content-side-box p{\n    font-size: 14px;\n    line-height: 16px;\n}\n.content-side-title{\n    padding-bottom: 20px;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/content-wrapper/Content-box.css b/src/components/content-wrapper/Content-box.css
+--- a/src/components/content-wrapper/Content-box.css	
++++ b/src/components/content-wrapper/Content-box.css	
+@@ -1,40 +1,45 @@
+ 
+-.content-box{
++.content-box {
+     display: flex;
+     align-items: flex-start;
+-    justify-content:space-between;
++    justify-content: space-between;
+     width: 100%;
+     gap: 30px;
+ }
+ 
+-.content-main{
+-    flex-grow: 1;
++.content-main {
++    width: 80%;
+ }
+ 
+ /*side*/
+ 
+-.content-side{
+-    width: 260px;
++.content-side {
++    width: 20%;
+ }
+-.content-side-box{
++
++.content-side-box {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+     padding-bottom: 15px;
+ }
+-.content-side-box img{
++
++.content-side-box img {
+     width: 30px;
+     height: 30px;
+ }
+-.content-side-text{
++
++.content-side-text {
+     font-size: 14px;
+     line-height: 16px;
+     font-weight: 700;
+ }
+-.content-side-box p{
++
++.content-side-box p {
+     font-size: 14px;
+     line-height: 16px;
+ }
+-.content-side-title{
++
++.content-side-title {
+     padding-bottom: 20px;
+ }
+\ No newline at end of file

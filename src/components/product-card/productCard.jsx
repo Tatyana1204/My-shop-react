@@ -7,6 +7,10 @@ const ProductCard = () => {
     const id = Number(useParams().id);
     const props = useSelector((state) => state.cards.cards);
     const product = props.find(product => product.id === id);
+    const showPhone = () => {
+        const phone = document.querySelector('.phone');
+        phone.style.display = 'block';
+    }
     return (
         <div className="content-main">
             <div className="product-card">
@@ -18,7 +22,8 @@ const ProductCard = () => {
                     <div className="content">
                         <Link to='/items'><span className='gray-text'>Посмотреть еще объявления</span></Link>
                         <span className='product-name'>{product.price}</span>
-                        <button className="btn btn-primary">Показать телефон</button>
+                        <button className="btn btn-primary" onClick={showPhone}>Показать телефон</button>
+                        <span className='phone'>{product.phone}</span>
                     </div>
                 </div>
                 <div className="product-description">
