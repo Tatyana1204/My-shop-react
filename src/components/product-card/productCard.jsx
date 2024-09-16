@@ -1,16 +1,17 @@
 import {Link, useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
 import './productCard.css';
+import {useState} from "react";
 
 
 const ProductCard = () => {
     const id = Number(useParams().id);
     const props = useSelector((state) => state.cards.cards);
     const product = props.find(product => product.id === id);
+    const [isShowPhoneNumber, setShowPhoneNumber] = useState(false);
 
     const showPhone = () => {
-        const phone = document.querySelector('.phone');
-        phone.style.display = 'block';
+        (!isShowPhoneNumber) ? setShowPhoneNumber(true) : setShowPhoneNumber(false);
     }
     return (
         <div className="content-main">
@@ -22,9 +23,9 @@ const ProductCard = () => {
                     </div>
                     <div className="content">
                         <Link to='/items'><span className='gray-text'>Посмотреть еще объявления</span></Link>
-                        <span className='product-name'>{product.price}</span>
+                        <span className='product-name'>{product.price} руб.</span>
                         <button className="btn btn-primary" onClick={showPhone}>Показать телефон</button>
-                        <span className='phone'>{product.phone}</span>
+                        {isShowPhoneNumber && <span className='phone'>{product.phone}</span>}
                     </div>
                 </div>
                 <div className="product-description">

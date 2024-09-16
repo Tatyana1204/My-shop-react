@@ -20,7 +20,7 @@ const ProductAdd = () => {
         id: Date.now(),
         img: '',
         name: '',
-        price: '',
+        price: 0,
         location: '',
         date: formatDate(),
         phone: '',
@@ -35,7 +35,7 @@ const ProductAdd = () => {
             id: Date.now(),
             img: '',
             name: '',
-            price: ' 0 руб.',
+            price: 0,
             location: '',
             date: formatDate(),
             phone: '',
@@ -74,7 +74,7 @@ const ProductAdd = () => {
                 <div className='label'>
                     <label>Цена: </label>
                     <input
-                        type='text'
+                        type='number'
                         placeholder='100 руб.'
                         name='price'
                         value={newProduct.price}
