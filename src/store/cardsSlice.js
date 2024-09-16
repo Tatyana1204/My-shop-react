@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-const cardsContent = [
+let cardsContent = [
     {
         id: 1,
         img: '/images/cat1.jpg',
@@ -101,14 +101,17 @@ const cardsSlice = createSlice({
     name: "cards",
     initialState: {
         cards: cardsContent,
-
     },
     reducers: {
         filterProducts(state, action) {
             state.cards = cardsContent.filter((card) => card.name.toLowerCase().includes(action.payload.text.toLowerCase()))
         },
+        addProduct(state, action) {
+            cardsContent = [...cardsContent, action.payload];
+            state.cards = cardsContent;
+        }
     }
 })
-export const {filterProducts} = cardsSlice.actions;
+export const {filterProducts, addProduct} = cardsSlice.actions;
 
 export default cardsSlice.reducer;

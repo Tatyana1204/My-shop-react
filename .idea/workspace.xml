@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5009fb83-19b0-41a7-ba64-8e1420233a78" name="Changes" comment="Initialize project using Create React App">
+      <change afterPath="$PROJECT_DIR$/src/components/form-add-product/ProductAdd.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form-add-product/productAdd.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-shop-react" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-shop-react/package-lock.json" beforeDir="false" />
@@ -14,8 +16,9 @@
       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/main/ContentMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/main/ContentMain.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/main/content-list/ContentList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/main/content-list/ContentList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/product-card/productCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/productCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/product-card/productCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/productCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/content-list/list-item/Content-list-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content-list/list-item/Content-list-item.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/cardsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cardsSlice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +46,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="toolkit" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="main" />
@@ -85,7 +88,7 @@
   "keyToString": {
     "Node.js.eslint.config.mjs.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "cards-root",
+    "git-widget-placeholder": "addProduct",
     "last_opened_file_path": "/Users/tatanasmetanina/my-shop-react/public/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
