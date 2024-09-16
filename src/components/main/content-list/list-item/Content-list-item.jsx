@@ -7,10 +7,11 @@ const ContentListItem = ({name, props}) => {
             <Link to={'/items/' + props.id}>
                 <img
                     className="content-main_list-item__img"
-                    src={props.img} alt={props.name} data-id={props.id}/>
+                    src={props.img} alt={props.name} data-id={props.id}
+                />
             </Link>
             <span className='content-main_list-item__name'>{props.name}</span>
-            <span className='content-main_list-item__price'>{props.price}</span>
+            <span className='content-main_list-item__price'>{props.price} руб.</span>
             <span className='gray-text'>{props.location}</span>
             <span className='gray-text'>{props.date}</span>
         </div>

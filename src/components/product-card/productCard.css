@@ -52,10 +52,6 @@
     line-height: 17px;
 }
 
-.phone {
-    display: none;
-}
-
 @media (max-width: 1240px) {
     .product-upper {
         flex-direction: column;

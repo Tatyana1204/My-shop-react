@@ -1,11 +1,11 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-const cardsContent = [
+let cardsContent = [
     {
         id: 1,
         img: '/images/cat1.jpg',
         name: 'Super-cat 1',
-        price: '100 000 pуб.',
+        price: 10000,
         location: 'St. Petersburg',
         date: '03.09.2024',
         phone: '8(900)000-00-00',
@@ -19,7 +19,7 @@ const cardsContent = [
         id: 2,
         img: '/images/cat2.jpg',
         name: 'Super 2',
-        price: '5 000 pуб.',
+        price: 5000,
         location: 'St. Petersburg',
         date: '03.09.2024',
         phone: '8(900)000-00-00',
@@ -29,7 +29,7 @@ const cardsContent = [
         id: 3,
         img: '/images/cat3.jpg',
         name: 'Cat 3',
-        price: '50 000 pуб.',
+        price: 50000,
         location: 'St. Petersburg',
         date: '03.09.2024',
         phone: '8(900)000-00-00',
@@ -47,7 +47,7 @@ const cardsContent = [
         id: 4,
         img: '/images/cat4.jpg',
         name: 'Super-cat new 4',
-        price: '1 pуб.',
+        price: 1,
         location: 'St. Petersburg',
         date: '03.09.2024',
         phone: '8(900)000-00-00',
@@ -62,7 +62,7 @@ const cardsContent = [
         id: 5,
         img: '/images/cat5.jpg',
         name: 'Super-cat new 5',
-        price: '9000 pуб.',
+        price: 9000,
         location: 'St. Petersburg',
         date: '03.09.2024',
         phone: '8(900)000-00-00',
@@ -87,7 +87,7 @@ const cardsContent = [
         id: 6,
         img: '/images/cat6.jpg',
         name: 'Super-cat old 6',
-        price: '18 000 pуб.',
+        price: 18000,
         location: 'St. Petersburg',
         date: '03.09.2024',
         phone: '8(900)000-00-00',
@@ -101,14 +101,17 @@ const cardsSlice = createSlice({
     name: "cards",
     initialState: {
         cards: cardsContent,
-
     },
     reducers: {
         filterProducts(state, action) {
             state.cards = cardsContent.filter((card) => card.name.toLowerCase().includes(action.payload.text.toLowerCase()))
         },
+        addProduct(state, action) {
+            cardsContent = [...cardsContent, action.payload];
+            state.cards = cardsContent;
+        }
     }
 })
-export const {filterProducts} = cardsSlice.actions;
+export const {filterProducts, addProduct} = cardsSlice.actions;
 
 export default cardsSlice.reducer;

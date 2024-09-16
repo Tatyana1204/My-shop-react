@@ -16,7 +16,6 @@
       <change beforePath="$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-shop-react/src/components/page-wrapper/PageWrapper.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/product-card/productCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/productCard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/product-card/productCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/productCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/cardsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cardsSlice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="toolkit" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="main" />
@@ -85,7 +84,7 @@
   "keyToString": {
     "Node.js.eslint.config.mjs.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "cards-root",
+    "git-widget-placeholder": "addProduct",
     "last_opened_file_path": "/Users/tatanasmetanina/my-shop-react/public/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
